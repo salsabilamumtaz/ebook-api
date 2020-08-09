@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get("/me", 'AuthController@me');
+
+Route::get('/kontrol', function () {
+    return "latihan kontrol";
+});
